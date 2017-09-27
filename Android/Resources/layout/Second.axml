@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SecondLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/Inne">
+    <TextView
+        android:id="@+id/lblForeCastHeadingTxt"
+        android:layout_below="@+id/rlTopMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="Kolejne godziny: "
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#99000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+    <ListView
+        android:id="@+id/ListViewHourlyForeCast"
+        android:layout_below="@+id/lblForeCastHeadingTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#99000000"
+        android:layout_marginBottom="25dp" /> 
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Zrób zdjęcie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTakePhoto" />
+    <Button
+        android:text="Wybierz zdjęcie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPickPhoto" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="200.0dp"
+        android:id="@+id/myImageView" />
+    <TextView
+        android:text="Aktualne warunki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConditions"
+        android:textSize="10dp" />
+    <Button
+        android:text="Wyślij zdjęcie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSendPhoto" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResponse" />
+    <TextView
+        android:text="Aplikacja pozwala na dodawanie zdjęć celem dostosowania preferencji ubioru. Zdjęcia przechowywane są na serwerze oraz nie są wykorzystywane w celach innych niż wyświetlanie propozycji ubioru dla użytkownika aplikacji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="7dp"
+        android:id="@+id/textView1" />
+</LinearLayout>
