@@ -42,9 +42,6 @@ namespace Weather
 
         protected override void OnCreate(Bundle bundle)
         {
-            System.Net.ServicePointManager.ServerCertificateValidationCallback += (o, certificate, chain, errors) => true;
-            System.Security.Cryptography.AesCryptoServiceProvider b = new System.Security.Cryptography.AesCryptoServiceProvider();
-
             base.OnCreate(bundle);
             MobileCenter.Start("25761872-63f8-4097-8317-f27f4447c996",
                          typeof(Analytics), typeof(Crashes));        
@@ -113,28 +110,7 @@ namespace Weather
      
         private void Initialize()
         {
-            Action<ImageView> picAction = PicSelected;
-            var builder = new ContainerBuilder();
-            //builder.RegisterType<PhotoConditionsRepository>()
-            //          .As<IPhotoConditionsRepository>()
-            //          .SingleInstance();
-            //builder.RegisterType<MyView>()
-            //         .As<IView>().SingleInstance();
-            //builder.RegisterType<ApiService>()
-            //         .As<IApiService>().SingleInstance();
-            //builder.RegisterType<WeatherRepository>()
-            //         .As<IWeatherRepository>().SingleInstance();
-            //builder.RegisterType<GpsProviderService>()
-            //      .As<IGpsProviderService>().SingleInstance();
-            //builder.RegisterType<SettingsService>()
-            //         .As<ISettingsService>().SingleInstance();
-            //builder.RegisterType<PhotoPicker>()
-            //        .As<IPhotoPicker>().SingleInstance();
-            //builder.RegisterType<PhotoTaker>()
-            //      .As<IPhotoTaker>().SingleInstance();
-            //builder.RegisterType<PhotoUploadService>()
-            //      .As<IPhotoUploadService>().SingleInstance();
-            //builder.Build();
+            Action<ImageView> picAction = PicSelected;            
 
             _photoConditionsRepository = new PhotoConditionsRepository();
             _myView = new MyView(this, _photoConditionsRepository);
